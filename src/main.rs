@@ -1,6 +1,6 @@
 use std::env;
 use std::time::Instant;
-const APP_NAME: &str = "codec-test-38681c";
+const APP_NAME: &str = "codec-test-2fa17f";
 const VERSION: &str = "0.0.0";
 struct Handler { name: String, version: String }
 impl Handler {
